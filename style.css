@@ -1,0 +1,75 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Buffer space */
+    gap: 20px; /* Padding between dice */
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 1s;
+    border-radius: 15px; /* Rounded edges */
+}
+
+.side {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 15px; /* Rounded edges */
+}
+
+.front  { background-color: #003f5c; color: #f9f9f9; transform: translateZ(50px); } /* Dark Blue */
+.back   { background-color: #bc5090; color: #ffffff; transform: rotateY(180deg) translateZ(50px); } /* Pink */
+.left   { background-color: #ff6361; color: #ffffff; transform: rotateY(-90deg) translateZ(50px); } /* Coral */
+.right  { background-color: #ffa600; color: #000000; transform: rotateY(90deg) translateZ(50px); } /* Yellow-Orange */
+.top    { background-color: #2f4b7c; color: #ffffff; transform: rotateX(90deg) translateZ(50px); } /* Dark Blue */
+.bottom { background-color: #dcdcdc; color: #000000; transform: rotateX(-90deg) translateZ(50px); } /* Light Gray */
+
+
+/* Button style */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result text spacing */
+#result {
+    margin-top: 20px; /* Buffer space for the result */
+}
