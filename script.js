@@ -7,9 +7,9 @@ const result = document.getElementById('result');
 const resultPutter = document.getElementById('resultPutter');
 
 // Arrays of disc golf shots and disc types
-const shots = ['Backhand', 'Forehand', 'Roller', 'Overhand', 'Wild', 'Backhand'];
-const discTypes = ['Putter', 'Midrange', 'Driver', 'Flippy', 'Overstable', 'Wild'];
-const puttTypes = ['Stagger', 'Stradle', 'Scoober', 'Driver', 'Mini', 'Wild'];
+const shots = ['Backhand', 'Backhand', 'Forehand', 'Roller', 'Overhand', '🃏'];
+const discTypes = ['Putter', 'Midrange', 'Driver', 'Flippy', 'Overstable', '🃏'];
+const puttTypes = ['Stagger', 'Straddle', 'Scoober', 'Driver', 'Mini', '🃏'];
 
 let previousShotIndex = null;
 let previousDiscTypeIndex = null;
